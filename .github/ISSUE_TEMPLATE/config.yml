@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 安全问题（私密）
+    url: https://github.com/hongmengchen/tui/security/advisories/new
+    about: 不要公开贴 token、配置或内部地址，请走私密报告。
+  - name: 使用说明
+    url: https://github.com/hongmengchen/tui/blob/main/README.md
+    about: 先看 README 和 --help。

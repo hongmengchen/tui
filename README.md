@@ -1,10 +1,16 @@
 # tui
 
+[![CI](https://github.com/hongmengchen/tui/actions/workflows/ci.yml/badge.svg)](https://github.com/hongmengchen/tui/actions/workflows/ci.yml)
+[![Tag](https://img.shields.io/github/v/tag/hongmengchen/tui)](https://github.com/hongmengchen/tui/tags)
+[![License](https://img.shields.io/github/license/hongmengchen/tui)](LICENSE)
+
 几个命令行小工具（[kube-token](https://github.com/hongmengchen/kube-token)、[npm-token](https://github.com/hongmengchen/npm-token)、[hmck](https://github.com/hongmengchen/hmck)）共用的终端样式。
 
 只放样式原语：配色、标题/正文/语义色、选中卡片、键位提示、按显示宽度截断和补齐。页面布局和交互留在各工具自己的仓库里。
 
 ## 用法
+
+需要 Go 1.24+：
 
 ```bash
 go get github.com/hongmengchen/tui@v0.1.0
@@ -52,8 +58,17 @@ var styles = theme.New(theme.Purple())
 ## 开发
 
 ```bash
+gofmt -l .
+go vet ./...
 go test ./...
 ```
+
+push / PR 会跑 CI。
+
+## 参与
+
+- [CHANGELOG](CHANGELOG.md) · [CONTRIBUTING](CONTRIBUTING.md)
+- 安全问题请按 [SECURITY](SECURITY.md) 走私密报告
 
 ## License
 
